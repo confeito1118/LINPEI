@@ -30,19 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             groupBox1 = new GroupBox();
+            pictureBox1 = new PictureBox();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             groupBox2 = new GroupBox();
+            button10 = new Button();
+            button9 = new Button();
             button6 = new Button();
             button5 = new Button();
+            groupBox3 = new GroupBox();
+            pictureBox2 = new PictureBox();
+            button7 = new Button();
+            button8 = new Button();
+            button11 = new Button();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(button4);
             groupBox1.Controls.Add(button3);
             groupBox1.Controls.Add(button2);
@@ -50,10 +62,19 @@
             groupBox1.Font = new Font("メイリオ", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(500, 400);
+            groupBox1.Size = new Size(500, 471);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "結づ";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(430, 401);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(64, 64);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // button4
             // 
@@ -61,7 +82,7 @@
             button4.Name = "button4";
             button4.Size = new Size(200, 100);
             button4.TabIndex = 4;
-            button4.Text = "結づ タスク 管理画面";
+            button4.Text = "結づ\r\nスタッフ用\r\n管理画面";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
@@ -71,7 +92,7 @@
             button3.Name = "button3";
             button3.Size = new Size(200, 100);
             button3.TabIndex = 3;
-            button3.Text = "結づ タスク";
+            button3.Text = "結づ\r\nスタッフ用";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
@@ -81,7 +102,7 @@
             button2.Name = "button2";
             button2.Size = new Size(200, 100);
             button2.TabIndex = 2;
-            button2.Text = "結づ 管理画面";
+            button2.Text = "結づ\r\n管理画面";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -97,14 +118,36 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(button10);
+            groupBox2.Controls.Add(button9);
             groupBox2.Controls.Add(button6);
             groupBox2.Controls.Add(button5);
             groupBox2.Location = new Point(518, 12);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(300, 400);
+            groupBox2.Size = new Size(300, 471);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "請求";
+            // 
+            // button10
+            // 
+            button10.Location = new Point(6, 347);
+            button10.Name = "button10";
+            button10.Size = new Size(200, 100);
+            button10.TabIndex = 5;
+            button10.Text = "キャンビルネオ";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
+            // 
+            // button9
+            // 
+            button9.Location = new Point(6, 241);
+            button9.Name = "button9";
+            button9.Size = new Size(200, 100);
+            button9.TabIndex = 4;
+            button9.Text = "りそなネット";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button6
             // 
@@ -126,18 +169,74 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(pictureBox2);
+            groupBox3.Controls.Add(button7);
+            groupBox3.Controls.Add(button8);
+            groupBox3.Location = new Point(824, 12);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(300, 471);
+            groupBox3.TabIndex = 2;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "求人";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(230, 401);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(64, 64);
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(6, 135);
+            button7.Name = "button7";
+            button7.Size = new Size(200, 100);
+            button7.TabIndex = 3;
+            button7.Text = "福祉のお仕事";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(6, 29);
+            button8.Name = "button8";
+            button8.Size = new Size(200, 100);
+            button8.TabIndex = 2;
+            button8.Text = "ハローワーク";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // button11
+            // 
+            button11.Location = new Point(18, 520);
+            button11.Name = "button11";
+            button11.Size = new Size(200, 100);
+            button11.TabIndex = 6;
+            button11.Text = "草津養護学校\r\n行事予定";
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(835, 427);
+            ClientSize = new Size(1149, 649);
+            Controls.Add(button11);
+            Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "ほむぺい";
             groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox2.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -151,5 +250,13 @@
         private GroupBox groupBox2;
         private Button button5;
         private Button button6;
+        private GroupBox groupBox3;
+        private Button button7;
+        private Button button8;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Button button9;
+        private Button button10;
+        private Button button11;
     }
 }

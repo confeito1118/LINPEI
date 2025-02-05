@@ -60,5 +60,36 @@ namespace LINPEI
             string url = "https://mail.yahoo.co.jp/u/pc/f/";
             OpenUrl(url);
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            string url = "https://www.hellowork.mhlw.go.jp/";
+            OpenUrl(url);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string url = "https://www.fukushi-work.jp/";
+            OpenUrl(url);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            string url = " https://www.kansaimiraibank.co.jp/hojin/b_direct/";
+            // string url = "https://www.resonabank.co.jp/hojin/b_direct/";
+            OpenUrl(url);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            string url = "https://www.canbill.jp/";
+            OpenUrl(url);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            string url = "http://www.kusatsu_yogo-sh.shiga-ec.ed.jp/gyouziyotei.html";
+            OpenUrl(url);
+        }
     }
 }
