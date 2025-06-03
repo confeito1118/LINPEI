@@ -91,5 +91,11 @@ namespace LINPEI
             string url = "http://www.kusatsu_yogo-sh.shiga-ec.ed.jp/gyouziyotei.html";
             OpenUrl(url);
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            string url = "https://colibri.jp/users/sign_in";
+            OpenUrl(url);
+        }
     }
 }
