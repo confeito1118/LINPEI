@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             groupBox1 = new GroupBox();
+            button12 = new Button();
             pictureBox1 = new PictureBox();
             button4 = new Button();
             button3 = new Button();
@@ -45,12 +46,16 @@
             button7 = new Button();
             button8 = new Button();
             button11 = new Button();
-            button12 = new Button();
+            menuStrip1 = new MenuStrip();
+            ファイルFToolStripMenuItem = new ToolStripMenuItem();
+            終了XToolStripMenuItem = new ToolStripMenuItem();
+            使い方HToolStripMenuItem = new ToolStripMenuItem();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
@@ -62,19 +67,30 @@
             groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(button1);
             groupBox1.Font = new Font("メイリオ", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
-            groupBox1.Location = new Point(10, 9);
+            groupBox1.Location = new Point(12, 26);
             groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 2, 3, 2);
-            groupBox1.Size = new Size(438, 353);
+            groupBox1.Size = new Size(373, 353);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "結づ";
             // 
+            // button12
+            // 
+            button12.Location = new Point(5, 180);
+            button12.Margin = new Padding(3, 2, 3, 2);
+            button12.Name = "button12";
+            button12.Size = new Size(175, 75);
+            button12.TabIndex = 6;
+            button12.Text = "Colibri";
+            button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(362, 279);
+            pictureBox1.Location = new Point(291, 279);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(70, 70);
@@ -131,11 +147,11 @@
             groupBox2.Controls.Add(button9);
             groupBox2.Controls.Add(button6);
             groupBox2.Controls.Add(button5);
-            groupBox2.Location = new Point(453, 9);
+            groupBox2.Location = new Point(391, 26);
             groupBox2.Margin = new Padding(3, 2, 3, 2);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 2, 3, 2);
-            groupBox2.Size = new Size(262, 353);
+            groupBox2.Size = new Size(189, 353);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "請求";
@@ -189,11 +205,11 @@
             groupBox3.Controls.Add(pictureBox2);
             groupBox3.Controls.Add(button7);
             groupBox3.Controls.Add(button8);
-            groupBox3.Location = new Point(721, 9);
+            groupBox3.Location = new Point(586, 26);
             groupBox3.Margin = new Padding(3, 2, 3, 2);
             groupBox3.Name = "groupBox3";
             groupBox3.Padding = new Padding(3, 2, 3, 2);
-            groupBox3.Size = new Size(262, 353);
+            groupBox3.Size = new Size(189, 353);
             groupBox3.TabIndex = 2;
             groupBox3.TabStop = false;
             groupBox3.Text = "求人";
@@ -201,7 +217,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(186, 279);
+            pictureBox2.Location = new Point(110, 279);
             pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(70, 70);
@@ -232,7 +248,7 @@
             // 
             // button11
             // 
-            button11.Location = new Point(16, 390);
+            button11.Location = new Point(17, 383);
             button11.Margin = new Padding(3, 2, 3, 2);
             button11.Name = "button11";
             button11.Size = new Size(175, 75);
@@ -241,36 +257,60 @@
             button11.UseVisualStyleBackColor = true;
             button11.Click += button11_Click;
             // 
-            // button12
+            // menuStrip1
             // 
-            button12.Location = new Point(5, 180);
-            button12.Margin = new Padding(3, 2, 3, 2);
-            button12.Name = "button12";
-            button12.Size = new Size(175, 75);
-            button12.TabIndex = 6;
-            button12.Text = "Colibri";
-            button12.UseVisualStyleBackColor = true;
-            button12.Click += button12_Click;
+            menuStrip1.Items.AddRange(new ToolStripItem[] { ファイルFToolStripMenuItem, 使い方HToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(788, 24);
+            menuStrip1.TabIndex = 7;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // ファイルFToolStripMenuItem
+            // 
+            ファイルFToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 終了XToolStripMenuItem });
+            ファイルFToolStripMenuItem.Name = "ファイルFToolStripMenuItem";
+            ファイルFToolStripMenuItem.Size = new Size(67, 20);
+            ファイルFToolStripMenuItem.Text = "ファイル(&F)";
+            // 
+            // 終了XToolStripMenuItem
+            // 
+            終了XToolStripMenuItem.Name = "終了XToolStripMenuItem";
+            終了XToolStripMenuItem.Size = new Size(113, 22);
+            終了XToolStripMenuItem.Text = "終了(&X)";
+            終了XToolStripMenuItem.Click += 終了XToolStripMenuItem_Click;
+            // 
+            // 使い方HToolStripMenuItem
+            // 
+            使い方HToolStripMenuItem.Name = "使い方HToolStripMenuItem";
+            使い方HToolStripMenuItem.Size = new Size(70, 20);
+            使い方HToolStripMenuItem.Text = "使い方(&H)";
+            使い方HToolStripMenuItem.Click += 使い方HToolStripMenuItem_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1005, 487);
+            ClientSize = new Size(788, 502);
             Controls.Add(button11);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
-            Text = "ほむぺい";
+            Text = "ほむぺい v1.6.0";
             groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -292,5 +332,9 @@
         private Button button10;
         private Button button11;
         private Button button12;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem ファイルFToolStripMenuItem;
+        private ToolStripMenuItem 使い方HToolStripMenuItem;
+        private ToolStripMenuItem 終了XToolStripMenuItem;
     }
 }
